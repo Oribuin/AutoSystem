@@ -1,0 +1,42 @@
+# autoPiston feature available after v1.1
+autoPiston:
+  feature: true
+  allowedWorlds:
+    - world
+    - Skyblock
+    - Survival
+  allowedPlants:
+    - REEDS
+    - POTATOES
+    - CARROTS
+
+# AutoKill feature kill mobs
+# which spawned on spawners
+autoKill:
+  # Feature of autoKill if you don't want
+  # You can set it false
+  feature: true
+  # Cook foods which will be dropped by
+  # Spawner
+  autoCook: true
+  # Removing mob which is spawned recent
+  # If you want to see death animation set it false
+  # *death animation may cause performance issue*
+  removeMob: true
+  # Allowed worlds which killed automatically
+  allowedWorlds:
+    - world
+    - Skyblock
+    - Survival
+  # You have to use one of them (Blacklist or Allowed)
+  # If you set something to allowed plugin will kill only
+  # allowed mobs. if you set something to blacklistedmobs
+  # then plugin will kill all mobs except blacklisted mobs.
+  # You can remove category one of them. (Blacklist or Allowed) !! USE 1 OF THEM !!
+  # EntityType list: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
+  allowedMobs:
+    - SHEEP
+    - COW
+    - CREEPER
+  blacklistMobs:
+    - VILLAGER

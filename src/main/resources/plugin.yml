@@ -1,0 +1,5 @@
+name: AutoSystem
+main: xyz.geik.autosystem.Main
+version: 1.0
+author: Geik
+api-version: 1.13
