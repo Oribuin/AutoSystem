@@ -1,6 +1,19 @@
 # autoPiston feature available after v1.1
 autoPiston:
+  # Feature of auto piston if you don't want
+  # You can set it false
   feature: true
+  # Checks requirements like require piston
+  # on top for break etc.
+  checks:
+    # Plugin require PISTON TOP OF FARM for
+    # auto break execute.
+    # It may affect performance because
+    # looking for piston.
+    searchForPiston: true
+    # Plugin require farmer for break it
+    # if there is no farmer then it won't break it.
+    requireFarmer: true
   allowedWorlds:
     - world
     - Skyblock
@@ -16,6 +29,9 @@ autoKill:
   # Feature of autoKill if you don't want
   # You can set it false
   feature: true
+  # Plugin require farmer for kill it
+  # if there is no farmer then it won't kill.
+  requireFarmer: true
   # Cook foods which will be dropped by
   # Spawner
   autoCook: true
