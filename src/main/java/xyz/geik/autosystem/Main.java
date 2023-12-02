@@ -16,7 +16,6 @@ public class Main extends JavaPlugin {
 
     public void onEnable() {
         new GLibAPI(this);
-        instance = this;
         this.config = new StorageAPI().initConfig("config");
 
         PluginManager pm = Bukkit.getPluginManager();
